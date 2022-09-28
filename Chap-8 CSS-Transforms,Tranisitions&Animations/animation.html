@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+        }
+        .box{
+            background-color: red;
+            height: 300px;
+            width: 300px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* We have to apply the animation in the box;  */
+            animation-name: widthAnimate;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            /* Mostly People set the animation-iteration-count Property to be infinite ; */
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            /* animation-direction: alternate; */
+            animation-timing-function: ease-in-out;
+
+            /* Short hand Property Method; */
+            /* animation: widthAnimate 3s ease-in-out 0.5s 4 alternate; */
+        }
+        /* @keyframes property is used to change the animation. */
+        img{
+                    animation: widthAnimate2 3s ease-in-out 0.5s infinite alternate;
+        }
+        @keyframes widthAnimate {
+            from{
+                /* Initial Property; */
+                width: 30px;
+                height: 30px;
+            }
+            /* Final Property; */
+            to{
+                width: 300px;
+                height: 100vh;
+            }
+        }
+        @keyframes widthAnimate2 {
+
+            /* You can also refer with the % rather than the from or to; */
+
+            0%{
+                /* Initial Property; */
+                width: 30px;
+                height: 30px;
+            }
+            20%{
+                width: 180px;
+                height: 180px;
+            }
+            /* Final Property; */
+            100%{
+                width: 300px;
+                height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is me Hasan.
+        </div>
+        <img src="dragon.jpg" alt="Image" width="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8 Practice Set</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .progress{
+            background-color: #eb0b0b;
+            height: 4px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: load 2s ease-in-out 1;
+        }
+        header{
+            height: 122px;
+            background-color: black;
+        }
+        main{
+            height: 899px;
+            background-color: blue;
+        }
+        /* Now we have to create a animation; */
+        @keyframes load {
+            0%{
+                width: 0;
+            }
+             /* vw -- >> view port width;  */
+            50%{
+                width:60vw;
+            }
+            100%{
+                width: 100vw;
+            }
+            
+        }
+        @keyframes rotate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .dragon img{
+            animation: rotate 5s ease-in infinite;
+        }
+        .slider{
+            background-color: aqua;
+            height: 523px;
+            /* width: 100vw; */
+            overflow: hidden;
+            margin: auto;
+        }
+        .slider img{
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="progress">
+        </div>
+    </header>
+    <main>
+        <div class="dragon">
+            <img src="dragon.jpg" alt="Image" width="352px">
+        </div>
+        <div class="slider">
+            <img src="https://images.unsplash.com/photo-1660578457871-355e94dbb82a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="Image">
+        </div>
+    </main>
+</body>
+</html>
