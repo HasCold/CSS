@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            background-color: red;
+            width: 233px;
+            height: 1000px;
+            /* NOTE:-- In display:inline no height or width is allowed; if we do display inline no top margin/padding
+            will be respected; */
+            /* span is like a example of inline element */
+            display: inline;
+            /* Block element demands all width and height; */
+            /* display: block; */
+        }        
+        .box2{
+            background-color: blue;
+            color: azure;
+            width: 800px;
+            height: 1000px;
+            display: inline-block;
+            /* display: block; */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <!-- By-default our element is a display block element -->
+    
+        Lorem ipsum dolor sit amet 
+    
+    </div>
+    <div class="box2">
+        Lorem, ipsum dolor sit amet habsd adjajd jahdkj 
+    </div>
+</body>
+</html>

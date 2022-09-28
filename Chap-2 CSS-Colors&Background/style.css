@@ -1,0 +1,16 @@
+/* 
+(*) -- >> can be used as a universal selector to select all the elements; */
+*{
+    /* m0+p0 -- >> Shortcut key; */
+    margin: 0;
+    padding: o;
+}
+.red{
+    background: rgb(255, 0, 0);  
+    color: white;
+    height: 90px;
+}
+.green{
+    background: green;
+    color: rgb(0, 255, 242);
+}

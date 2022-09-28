@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        li{
+            /* display: inline; */
+            /* list-style: circle; */
+            list-style: square outside url("red.jpg");
+        }
+        ul{
+         background-color: red;
+         color: beige;   
+        }
+        header{
+            background-color: black;
+            color: white;
+            height: 50px;
+            /* Your position; get sticky means fixed at a point; */
+            position: sticky;
+            top: 0;
+            /* z-index: means jis ki z index ki value bari hogi wo upar ayega ;
+            Agar apko two overlapping elements dekhne ko mile tu uski z-index barha de;
+            */
+            z-index: 10;
+        }
+        .class{
+            text-align: center;
+            border: 3px solid red;
+        }
+        .container{ 
+            background-color: aqua;
+            height: 90vh;
+            width: 80vw;
+            margin: auto;
+            padding: 0 35px;  
+            position: relative;
+            z-index: 2;
+        }
+        .box{
+            background-color: chartreuse;
+            height: 200px;
+            width: 200px;
+            /* position: relative;
+            top: 44px;
+            left: 444px; */
+            /* position: absolute; */
+            position: fixed;
+            top: 150;
+            left: 0;
+        }
+        .box2{
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            color: beige;
+            /* position: absolute; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p class="class">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat quos distinctio! Ea, fugiat adipisci aperiam quos, iure nemo nam voluptatum fuga doloremque libero tenetur ex voluptate, odit voluptatibus! Pariatur repudiandae non dignissimos itaque aliquid. Labore laborum, officiis distinctio saepe perferendis inventore quisquam soluta beatae totam! Nobis nesciunt earum repellendus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corrupti quos in asperiores ratione voluptatibus aperiam sapiente. Quod, at? Nisi fuga cum minus tempora eius quidem quasi consequuntur et enim.
+        </p>
+        <div class="box">
+            I am a box
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+    </ul>
+</body>
+</html>

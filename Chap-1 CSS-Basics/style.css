@@ -1,0 +1,13 @@
+ 
+/*
+ # -- >> denoted for id;
+. -- >> denoted for class;
+ */
+#first{
+    background-color: aqua;
+}
+.bg-blue{
+    background-color: blue;
+    /* Text color ; */
+    color: white;  
+}

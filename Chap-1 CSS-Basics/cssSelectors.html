@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector is used below; */
+        h1{
+            color: red;
+        }
+        /* ID Selector is used; */
+        #first{
+            background-color: antiquewhite;
+        }
+                /* Element Selector is used below; */
+        h2{
+            color: chocolate;
+        }
+        /* Class Selectors is used; */
+        .yellow{
+            color: brown;
+            background-color: darkgray;
+        }
+                /* Class Selectors is used; Also group selectors is used like this  */
+        .blue,h3{
+            background-color: blueviolet;
+            color: azure;
+            border: 2px solid black;
+        }
+        /* (*) can be used as a universal selector to select all the elements; */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- AN inline style will override external and internal styles; -->
+    <div id="first">
+        <h1>This is my CSS Selector Page</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt accusamus nulla vel soluta tenetur maiores, accusantium recusandae impedit! Voluptatum beatae in, repellat earum odio reiciendis non sapiente repudiandae dolore consectetur.
+        </p>
+        <h1>This is another header tag</h1>
+    </div>
+    <div class="yellow">
+        <h2>
+            This is the class div tag
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dignissimos praesentium rem deserunt temporibus perspiciatis voluptatum placeat! Totam, alias sequi praesentium culpa et molestias nihil a facere blanditiis corporis? Non.
+        </p>
+    </div>
+    <span class="blue">First Tag</span> <br>
+    <span class="blue">Second Tag</span><br>
+    <span class="blue">Third Tag</span><br>
+    <h3>This is h3</h3>
+</body>
+</html>

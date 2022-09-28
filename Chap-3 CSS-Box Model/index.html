@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* NOTE:- That the total width/height is calculated as follows;
+        Total height = height + top/bottom padding + top/bottom border + top/bottom margin;  */
+        .content{
+            height: 423px;
+            width: 345px;
+            background-color: red;
+            /* margin: 4px 3px 2px 5px; */
+            margin: 4px 2px;
+            padding: 13px;
+            border: 2px solid black;
+            /* Setting Border:- */
+            /* border-width: 4px;
+            border-style: dotted ;
+            border-color: aqua; */
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed id, nam eum nostrum quos omnis magni asperiores officia, porro, officiis fugiat qui. Odio et est ex dolorum, aperiam perferendis quo! Corporis repudiandae necessitatibus molestiae laboriosam enim recusandae quis consectetur voluptate.
+        </p>
+    </div>
+</body>
+</html>

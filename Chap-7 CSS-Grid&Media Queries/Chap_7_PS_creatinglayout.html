@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating layout using CSS grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: black;
+            color: white;
+        }
+        ul li{
+            list-style: none;
+            margin: 20px 20px;
+            padding: 20px 40px;
+            font-size: 24px;
+        }
+        ul{
+            display: inline-grid;
+            grid-template-columns: auto auto auto auto;
+            float: right;
+        }
+        .image{
+            display: flex;
+            height: 25vh;
+        }
+        .container{
+            background-color: blanchedalmond;
+            height: 25%;
+            width: 25%;
+        }
+        .class2{
+            background-color: cadetblue;
+            height: 25%;
+            width: 25%;
+        }   
+        section{
+            background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+        }     
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Description</li>
+            </ul>
+        </nav>
+        <div class="image">
+            <img src="support.jpg" alt="Chat with us">
+        </div>
+    </header>
+    <section> 
+
+        <div class="container">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam eum nihil dolores velit, magni porro deleniti inventore id non voluptatum eius odio repudiandae unde pariatur accusamus perspiciatis explicabo quibusdam ad quam illum numquam esse fuga impedit soluta. Quaerat nihil inventore temporibus quasi numquam aliquid reiciendis ratione distinctio voluptate ut non excepturi esse error, asperiores aut. Iusto voluptatem rerum quo nobis?
+        </div>
+        <div class="class2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis repudiandae eveniet nam tempore exercitationem tempora obcaecati at vitae, ut nihil ipsam nesciunt laudantium ex doloribus facere libero neque rem dolorem deserunt porro itaque cum. Molestiae aut maiores ipsam, fuga esse laborum iusto in. Dolorem beatae rem tempora laborum sunt provident.
+        </div>
+    </section>
+</body>
+</html>

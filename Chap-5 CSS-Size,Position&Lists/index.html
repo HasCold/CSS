@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        .container{
+            font-size: 12px;
+        }
+        .box{
+            /* font-size: 12px; */
+            /* em -- >> means mere parent font size ke according pixels hogana; 3 x (12)parent size = 36px; */
+            font-size: 3em;
+            background-color: red;
+        }
+        .box2{
+            background-color: aqua;
+            color: black;
+            width: 334px;
+            /* vw -- >> View port width */
+            width: 50vw;
+            height: 50vh; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>
+            This is a paragraph
+        </p>
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius voluptas est neque, exercitationem deserunt amet, minus consequatur, ullam voluptatibus reprehenderit nisi soluta omnis itaque minima vero corporis dicta pariatur at quas aliquam velit voluptates? Sapiente iure odit nulla ab rerum.
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+</body>
+</html>
