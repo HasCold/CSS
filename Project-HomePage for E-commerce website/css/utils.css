@@ -1,0 +1,19 @@
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn button{
+    padding: 5px 10px;
+    color: white;
+    background-color: var(--main-bg-color);
+    border-right: 2px solid white;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 900;
+}
+.slider img{
+    width: 565px;
+    height: 60vh;
+    padding: 12px 25%;
+}
