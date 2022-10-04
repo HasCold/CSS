@@ -13,7 +13,13 @@
     font-size: 900;
 }
 .slider img{
-    width: 565px;
-    height: 60vh;
-    padding: 12px 25%;
+    width: 900px;
+    height: 40vh;
+    padding: 12px 25vw;
+}
+.my-1{
+    margin: 6px 0;
+}
+.my-2{
+    margin: 22px 0;
 }

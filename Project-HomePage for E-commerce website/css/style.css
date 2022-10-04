@@ -35,6 +35,7 @@ nav ul li{
 }
 nav ul li a{
     color: white;
+    font-weight: bold;
 }
 nav ul li a:hover{
     font-weight: bolder;
@@ -46,7 +47,7 @@ nav ul li a:hover{
     align-items: center;
 }
 .search input{
-    width: 500px;
+    width: 30vw;
     height: 28px;
     border-radius: 6px;
     margin: 0 10px 0 56px;
@@ -56,7 +57,32 @@ nav ul li a:hover{
     font-family: 'Noto Sans', sans-serif;
     
 }
-
+.slider{
+    overflow: hidden;
+}
+.cards{
+    margin: 26px auto;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.card h2{
+    font-family: 'Noto Sans', sans-serif;    
+}
+.card-item{
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 25px;
+} 
+.card{
+    max-width: 90vw;
+    margin: 26px auto;
+}
 .container{
     min-height: calc(100vh - 55px - 12vh);
 }
