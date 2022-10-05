@@ -12,16 +12,43 @@ header{
     color: white;
     font-family: 'Noto Sans', sans-serif;
 }
+img{
+    cursor: pointer;
+}
 nav{
     display: flex;
+}
+.my-3{
+    display: flex;
+    margin: 10px 0 10px 0;
 }
 .logo{
     display: flex;
     align-items: center;
+    flex-direction: column;
+    padding-left: 95px;
 }
 .logo img{
     width: 88px;
     padding: 0 25px;
+    margin-top: 12px;
+}
+.plus{
+    font-style: italic;
+    font-size: 12px;
+    font-weight: bold;
+    margin: -11px 0 10px 0 ;
+}
+.plus a{
+    font-style: italic;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+.logo span img{
+    height: 12px;
+    width: auto;
+    padding: 0;
 }
 nav ul{
     height: 56px;
